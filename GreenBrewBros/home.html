@@ -1,0 +1,256 @@
+<!--GreenBrewBros Brewery
+    Developed by Vitalii, Zhaohai , Patrick and Smita
+    IPD-22-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <!--custome css-->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--Slick css-->
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <!--Bootstrap css and js-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--fontawesome css and js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/cb9af5fb35.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!--Start header-->
+        <nav class="row navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="navigation">
+            <div class="col-md-2">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="home.html"><img src="images/GreenBrewBrosLogo.png" id="logo"
+                        class="img-responsive" alt="pic"></a>
+
+            </div>
+
+            <div class="col-md-7 collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item ">
+                        <a class="headernav nav-link" href="OrganicBeer.html">ORGANIC BEER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="headernav nav-link" href="Awards.html">AWARDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" headernav nav-link" href="events.html">EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="headernav nav-link" href="AboutUs.html">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <form class="form-inline">
+                    <input id="search" type="search" placeholder="Search Beers, Events,.." aria-label="Search">
+                    <button id="srch_btn" type="submit" style="background-color: #598527;">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!--End header/navigation menu-->
+        <!--Start login-signup button div element-->
+        <div id="login" class="row">
+            <div class="col-md-3 offset-md-8">
+                <button onclick="login()" type="button" id="login_signup">Login/Sign Up</button>
+            </div>
+        </div>
+        <!--Start login-signup button div element-->
+
+        <div class="row center-block text-center mt-2 mb-2">
+            <div class="col-12 my-auto">
+                <h3 id="gallery" class="align-self-center">Gallery</h3>
+            </div>
+        </div>
+
+        <!--List of pictures-->
+        <div class="row mx-auto multiple_items " id="pic_slider">
+
+            <!--picture1-->
+            <div class="item col-12">
+                <img src="images/GBB_Breweries_Taproom.jpg" alt="pic" class="img-fluid images">
+
+            </div>
+            <!--picture2-->
+            <div class="item col-12">
+                <img src="images/Tradeshow-Exhibit.jpg" alt="pic" class="img-fluid images">
+
+            </div>
+            <!--picture3-->
+            <div class="item col-12">
+                <img src="images/Upright-Brewing.jpg" alt="pic" class="img-fluid images">
+
+            </div>
+            <!--picture4-->
+            <div class="item col-12">
+                <img src="images/Simsam.jpg" alt="pic" class="img-fluid images">
+
+            </div>
+            <!--picture5-->
+            <div class="item col-12">
+                <img src="images/joh-picnic-birthday.jpg" alt="pic" class="img-fluid images">
+
+            </div>
+            <!--picture6-->
+            <div class="item col-12">
+                <img src="images/GBB-brewery-483.jpg" alt="pic" class="img-fluid images">
+
+            </div>
+
+        </div>
+
+        <!--End of pic slider-->
+        <div class="row center-block text-center mt-2 mb-2">
+            <div class="col-12 my-auto">
+                <h4 id="trade_info" style="color: rgb(219, 69, 24);">Explore our upcoming Trade show this winter!</h4>
+                <p><b>Explore our organic and healthy beers which all have earthy feel! We make beer while
+                        keeping mother earth happy. A brewery in Nova Scotia would have a strong emphasis on
+                        environmental awareness. You
+                        must attend our upcoming "Trade Show" this month in october 2020 to explore our organic and
+                        environmental concious brewery.
+                    </b></p>
+            </div>
+        </div>
+
+        <!--Start of information blocks section-->
+        <div class="row mt-5 mb-5 align-item-center center-block text-center" id="boxes">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 align-self-center">
+                <div class="our_info info clickable" id="info1">
+                    <h3>Our news/Forum/Our Experts</h3>
+                    <a href="events.html">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 align-self-center">
+                <div class="our_info info clickable" id="info2">
+                    <h3>Our environmental concious</h3>
+                    <a href="EnvironmentalPage.html">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 align-self-center">
+                <div class="our_info info clickable" id="info3">
+                    <h3>Beer Bestsellers</h3><br>
+                    <h6 style="color:aqua;">1. Seventh Inning SIPA<br>2. South End Pale Ale<br>3. Blood Orange
+                        Blonde<br>4. RHUBY COVE<br>5. Make It So: Galaxy IPA</h6>
+                    <a href="bestsellers.html">Read More</a>
+                </div>
+            </div>
+        </div>
+        <!--End of information blocks section-->
+
+        <!--start footer-->
+        <div class="row" id="footer">
+            <div class="col-xs-12  col-md-4">
+                <h5 style="color: white;">@2018 By GreenBrewBros<br> Brewing Company</h5>
+                <div id="media_icons" class="social_med">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-5 offset-md-3">
+                <form action="http://jac.stephmoreau.ca/submitForm/">
+                    <h4 style="color: white;">Contact Us</h4>
+                    <label for="name" class="contact mr-3">Name</label>
+                    <input id="name" class=" mr-sm-1" type="text" placeholder="Name" aria-label="name"><br>
+                    <label for="email" class="contact mr-4">Email</label>
+                    <input id="email" class="mr-sm-1" type="text" placeholder="Email address" aria-label="email"><br>
+                    <label for="message" class="contact">Message</label>
+                    <input id="message" class="mr-sm-1" type="text" placeholder="Message" aria-label="Message"><br>
+                    <button class="btn btn-light my-sm-1 my-lg-1" type="submit"
+                        style="background-color: #598527;">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!--End footer-->
+
+    </div>
+    <!--End main container-->
+
+
+    <!-- JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+    <!--Slick jquery-->
+    <script src="js/slick.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <!--login button click event-->
+    <script>
+        function login() {
+            document.location.href = "login.html";
+        }
+    </script>
+
+    <!--slick slider js-->
+    <script>
+        $(function () {
+            $('.multiple_items').slick({
+                infinite: true,
+                slidesToShow: 2,
+                arrows: true,
+                autoplay:true,
+                autoplaySpeed: 2000,
+                slidesToScroll: 1,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 825,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+
+                ]
+            });
+        });
+    </script>
+
+    <!--information blocks javascript to make them clickable-->
+    <script>
+        $(document).ready(function () {
+            $('.clickable').click(function () {
+                window.location = $(this).find("a").attr("href");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

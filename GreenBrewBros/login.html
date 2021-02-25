@@ -1,0 +1,137 @@
+<!--GreenBrewBros Brewery
+    Developed by Vitalii, Zhaohai , Patrick and Smita
+    IPD-22-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="js/Login.js"></script>
+</head>
+
+<body>
+    <div class="container">
+       
+         <!--Start header-->
+         <nav class="row navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="navigation">
+            <div class="col-md-2">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="home.html"><img src="images/GreenBrewBrosLogo.png" id="logo"
+                        class="img-responsive" alt="pic"></a>
+
+            </div>
+
+            <div class="col-md-7 collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item ">
+                        <a class="headernav nav-link" href="OrganicBeer.html">ORGANIC BEER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="headernav nav-link" href="Awards.html">AWARDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" headernav nav-link" href="events.html">EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="headernav nav-link" href="AboutUs.html">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <form class="form-inline">
+                    <input id="search" type="search" placeholder="Search Beers, Events,.." aria-label="Search">
+                    <button id="srch_btn" type="submit" style="background-color: #598527;">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!--End header/navigation menu-->
+
+        <!--Start login-->
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+                <div class="tab">
+                    <button  class="tablinks" onclick="openLogin(event, 'Login')" id="defaultOpen">Log in</button>
+                    <button  class="tablinks" onclick="openLogin(event, 'SignUp')">Sign Up</button>
+                </div>
+                <div id="Login" class="tabcontent">
+                    <form name="signIn" id="signInForm" method="post" novalidate action="http://jac.stephmoreau.ca/submitForm/" class=" log_sign_form auth-validate-form auth-real-time-validation a-spacing-none">
+                        <h1 id="sign_inup">Sign-In</h1>
+                        <div class="form-group">
+                            <label for="inputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword1">Password</label>
+                            <input type="password" class="form-control" id="inputPassword1">
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary submitBtn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="SignUp" class="tabcontent">
+                    <form  id="signUpForm" name="signUp" method="post" novalidate action=" http://jac.stephmoreau.ca/submitForm/" class="log_sign_form auth-validate-form auth-real-time-validation a-spacing-none">
+                        <h1>Create account</h1>
+                        <div class="form-group">
+                            <label for="inputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail2" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword2">Password</label>
+                            <input type="password" class="form-control" id="inputPassword2">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3">Password again</label>
+                            <input type="password" class="form-control" id="inputPassword3">
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary submitBtn">Create your account</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--End login div element-->
+        <!--start footer-->
+        <div class="row" id="footer">
+            <div class="col-xs-12  col-md-4">
+                <h5 style="color: white;">@2018 By GreenBrewBros<br> Brewing Company</h5>
+                <div id="media_icons" class="social_med">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 offset-md-4">
+                <form action="http://jac.stephmoreau.ca/submitForm/">
+                    <h4 style="color: white;">Contact Us</h4>
+                    <label for="name" class="contact mr-3">Name</label>
+                    <input id="name" class=" mr-sm-1" type="text" placeholder="Name" aria-label="name"><br>
+                    <label for="email" class="contact mr-4">Email</label>
+                    <input id="email" class="mr-sm-1" type="text" placeholder="Email address" aria-label="email"><br>
+                    <label for="message" class="contact">Message</label>
+                    <input id="message" class="mr-sm-1" type="text" placeholder="Message" aria-label="Message"><br>
+                    <button class="btn btn-light my-sm-1 my-lg-1" type="submit"
+                        style="background-color: #598527;">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!--End footer-->
+    </div><!--End main container-->
+
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+/*GreenBrewBros Brewery
+    Developed by Vitalii, Zhaohai , Patrick and Smita
+    IPD-22 */
+
+
+.container{
+    background-color: bisque !important;
+}
+.log_sign_form {
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 5px;
+}
+.submitBtn {
+    text-align: center;
+}
+.signInUp {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+#signUpBtn, #loginBtn {
+    background: lightgreen;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid  darkgray;
+  background-color:  #598527;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #598527;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/*MEDIA QUERIES */
+  
+@media screen and (max-width:400px){
+  #sign_inup{
+    font-size: medium;
+  }
+  .tablinks{
+    height: 20px;
+    width: 35px;
+  }
+}
+
+@media only screen and (max-width:823px){
+  #sign_inup{
+    font-size: smaller;
+  }
+  .tablinks{
+    height: 20px;
+    width: 50px;
+  }
+
+}

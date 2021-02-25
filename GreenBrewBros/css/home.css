@@ -1,0 +1,127 @@
+/*GreenBrewBros Brewery
+    Developed by Vitalii, Zhaohai , Patrick and Smita
+    IPD-22 */
+
+
+/* start picture slider css*/
+
+
+#pic_slider{
+    display: flex;
+    background-color: #bf9362;
+  }
+ 
+  #pic_slider .item img{
+      width: 500px;
+      height: 350px;
+  }
+
+.slick-prev {
+    left: 20px;
+}
+
+.slick-prev:after {
+	content: "\f104";
+    font: 40px/1 'FontAwesome';
+    color: #7e7e7e;
+}
+
+.slick-next {
+    right: 20px;
+}
+
+.slick-next:after {
+	 content: "\f105";
+     font: 40px/1 'FontAwesome';
+     color: #7e7e7e;
+}
+.center{
+    margin: 0 auto;
+    width: 80%;
+}
+  /* end picture slider css*/
+  
+
+  /* start info blocks css*/
+  .info{
+      position: relative;
+      background-size: cover;   
+  }
+  .info h3{
+      color: #fff;
+  }
+  #info1{
+      background-image: url(../images/Troegs-Chris-John-720x479.png);
+  }
+  #info2{
+      background-image: url(../images/large_beer.jpg);
+  }
+  #info3{
+      background-image: url(../images/brewing2.jpg);
+  } 
+  .clickable{
+       border: 1px solid black;
+       cursor: pointer;
+       padding-top: 12px;
+       padding-bottom: 12px;
+  } 
+  .our_info{
+      height: 300px;
+      width: 300px;
+  }    
+  #boxes{
+      justify-content: space-around;
+  }
+  #pictures{
+      background-color: coral;
+  }
+  /* end info blocks css*/
+  
+  
+  /*MEDIA QUERIES */
+  
+ 
+   @media only screen and (max-width:1069px){
+      .our_info{
+          height: 228px;
+          width: 228px;
+      }   
+      #pic_slider .item img{
+        width: 380px;
+        height: 300px;
+    } 
+    #boxes h3{
+        font-size: 15px;
+    }
+  }
+  @media only screen and (max-width:825px){
+    #pic_slider .item img{
+        width: 400px;
+        height: 330px;
+    } 
+    #gallery{
+        font-size: 22px;
+    }
+    #trade_info{
+        font-size: 20px;
+      }
+  }
+  @media only screen and (max-width:478px){
+    .our_info{
+        height: 228px;
+        width: 228px;
+    }   
+    #pic_slider .item img{
+      width: 260px;
+      height: 200px;
+    }
+     #boxes h3{
+      font-size: 12px;
+    }
+    #gallery{
+      font-size: 18px;
+    }
+    #trade_info{
+      font-size: 15px;
+    }
+}

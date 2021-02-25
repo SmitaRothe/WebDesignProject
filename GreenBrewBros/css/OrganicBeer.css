@@ -1,0 +1,51 @@
+/*GreenBrewBros Brewery
+    Developed by Vitalii, Zhaohai , Patrick and Smita
+    IPD-22 */
+
+* {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 13px;
+    width: 75%;
+}
+
+.container-1 {
+    background-color: #bf9362;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.container-2 {
+    background-color: coral;
+    padding: 15px;
+}
+
+.container-3 {
+    background-color: bisque;
+    padding: 15px;
+}
+
+.container-4 {
+    background-color: #bf9362;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.desktop {
+    width: 90%;
+}
+
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block; background-color: #222}
+}
